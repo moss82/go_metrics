@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gometrics
+  labels:
+    app: gometrics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gometrics
+  template:
+    metadata:
+      labels:
+        app: gometrics
+    spec:
+      containers:
+      - name: gometrics
+        image: gometrics:latest
+        imagePullPolicy: Never
+        ports:
+        - name: web
+          containerPort: 8080

@@ -1,0 +1,21 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: prometheus
+  namespace: default
+spec:
+  serviceAccountName: prometheus
+  serviceMonitorSelector:
+    matchLabels:
+      Team: Frontend
+  replicas: 1
+  resources:
+    requests:
+      memory: 400Mi
+      cpu: 200m
+  ruleSelector: {}
+  alerting:
+    alertmanagers:
+    - namespace: default
+      name: alertmanager
+      port: web

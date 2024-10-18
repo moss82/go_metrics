@@ -1,0 +1,45 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: main
+spec:
+  serviceAccountName: prometheus
+  serviceMonitorSelector:
+    matchLabels:
+      Team: Frontend
+  resources:
+    requests:
+      memory: 400Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-main
+spec:
+  type: NodePort
+  ports:
+  - name: web
+    nodePort: 30900
+    port: 9090
+    protocol: TCP
+    targetPort: web
+  selector:
+    prometheus: main
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-lb
+  annotations:
+    metallb.universe.tf/allow-shared-ip: "shared-ip-key"
+spec:
+  type: LoadBalancer
+  ports:
+  - name: web
+    targetPort: 9090
+    port: 9090
+    protocol: TCP
+    targetPort: web
+  selector:
+    prometheus: main
+---
