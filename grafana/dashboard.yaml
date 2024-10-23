@@ -6,5 +6,5 @@ metadata:
 spec:
   instanceSelector:
     matchLabels:
-      dashboards: "grafana"
-  url: "https://raw.githubusercontent.com/aaukhatov/grafana-dashboards/refs/heads/master/Go%20Metrics-1567509764849.json"
+      dashboards:
+  url: "https://raw.githubusercontent.com/moss82/go_metrics/refs/heads/main/autogenerate-dashboard/grafana_dashboard.json"
