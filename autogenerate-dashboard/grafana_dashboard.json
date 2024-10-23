@@ -1,0 +1,727 @@
+{
+  "title": "Auto-Generated Dashboard",
+  "panels": [
+    {
+      "title": "go_gc_duration_seconds{quantile=\"0\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds{quantile=\"0\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "title": "go_gc_duration_seconds{quantile=\"0.25\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds{quantile=\"0.25\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      }
+    },
+    {
+      "title": "go_gc_duration_seconds{quantile=\"0.5\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds{quantile=\"0.5\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      }
+    },
+    {
+      "title": "go_gc_duration_seconds{quantile=\"0.75\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds{quantile=\"0.75\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      }
+    },
+    {
+      "title": "go_gc_duration_seconds{quantile=\"1\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds{quantile=\"1\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      }
+    },
+    {
+      "title": "go_gc_duration_seconds_sum",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds_sum"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      }
+    },
+    {
+      "title": "go_gc_duration_seconds_count",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_duration_seconds_count"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 24
+      }
+    },
+    {
+      "title": "go_gc_gogc_percent",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_gogc_percent"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 24
+      }
+    },
+    {
+      "title": "go_gc_gomemlimit_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_gc_gomemlimit_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 32
+      }
+    },
+    {
+      "title": "go_goroutines",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_goroutines"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 32
+      }
+    },
+    {
+      "title": "go_info{version=\"go1.23.2\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_info{version=\"go1.23.2\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 40
+      }
+    },
+    {
+      "title": "go_memstats_alloc_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_alloc_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 40
+      }
+    },
+    {
+      "title": "go_memstats_alloc_bytes_total",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_alloc_bytes_total"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 48
+      }
+    },
+    {
+      "title": "go_memstats_buck_hash_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_buck_hash_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 48
+      }
+    },
+    {
+      "title": "go_memstats_frees_total",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_frees_total"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 56
+      }
+    },
+    {
+      "title": "go_memstats_gc_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_gc_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 56
+      }
+    },
+    {
+      "title": "go_memstats_heap_alloc_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_heap_alloc_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 64
+      }
+    },
+    {
+      "title": "go_memstats_heap_idle_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_heap_idle_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 64
+      }
+    },
+    {
+      "title": "go_memstats_heap_inuse_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_heap_inuse_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 72
+      }
+    },
+    {
+      "title": "go_memstats_heap_objects",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_heap_objects"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 72
+      }
+    },
+    {
+      "title": "go_memstats_heap_released_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_heap_released_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 80
+      }
+    },
+    {
+      "title": "go_memstats_heap_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_heap_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 80
+      }
+    },
+    {
+      "title": "go_memstats_last_gc_time_seconds",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_last_gc_time_seconds"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 88
+      }
+    },
+    {
+      "title": "go_memstats_mallocs_total",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_mallocs_total"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 88
+      }
+    },
+    {
+      "title": "go_memstats_mcache_inuse_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_mcache_inuse_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 96
+      }
+    },
+    {
+      "title": "go_memstats_mcache_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_mcache_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 96
+      }
+    },
+    {
+      "title": "go_memstats_mspan_inuse_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_mspan_inuse_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 104
+      }
+    },
+    {
+      "title": "go_memstats_mspan_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_mspan_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 104
+      }
+    },
+    {
+      "title": "go_memstats_next_gc_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_next_gc_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 112
+      }
+    },
+    {
+      "title": "go_memstats_other_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_other_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 112
+      }
+    },
+    {
+      "title": "go_memstats_stack_inuse_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_stack_inuse_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 120
+      }
+    },
+    {
+      "title": "go_memstats_stack_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_stack_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 120
+      }
+    },
+    {
+      "title": "go_memstats_sys_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_memstats_sys_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 128
+      }
+    },
+    {
+      "title": "go_sched_gomaxprocs_threads",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_sched_gomaxprocs_threads"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 128
+      }
+    },
+    {
+      "title": "go_threads",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "go_threads"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 136
+      }
+    },
+    {
+      "title": "process_cpu_seconds_total",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_cpu_seconds_total"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 136
+      }
+    },
+    {
+      "title": "process_max_fds",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_max_fds"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 144
+      }
+    },
+    {
+      "title": "process_network_receive_bytes_total",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_network_receive_bytes_total"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 144
+      }
+    },
+    {
+      "title": "process_network_transmit_bytes_total",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_network_transmit_bytes_total"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 152
+      }
+    },
+    {
+      "title": "process_open_fds",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_open_fds"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 152
+      }
+    },
+    {
+      "title": "process_resident_memory_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_resident_memory_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 160
+      }
+    },
+    {
+      "title": "process_start_time_seconds",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_start_time_seconds"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 160
+      }
+    },
+    {
+      "title": "process_virtual_memory_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_virtual_memory_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 168
+      }
+    },
+    {
+      "title": "process_virtual_memory_max_bytes",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "process_virtual_memory_max_bytes"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 168
+      }
+    },
+    {
+      "title": "promhttp_metric_handler_requests_in_flight",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "promhttp_metric_handler_requests_in_flight"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 176
+      }
+    },
+    {
+      "title": "promhttp_metric_handler_requests_total{code=\"200\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "promhttp_metric_handler_requests_total{code=\"200\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 176
+      }
+    },
+    {
+      "title": "promhttp_metric_handler_requests_total{code=\"500\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "promhttp_metric_handler_requests_total{code=\"500\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 184
+      }
+    },
+    {
+      "title": "promhttp_metric_handler_requests_total{code=\"503\"}",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "promhttp_metric_handler_requests_total{code=\"503\"}"
+        }
+      ],
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 184
+      }
+    }
+  ],
+  "uid": "auto-generated-dashboard",
+  "version": 1
+}
